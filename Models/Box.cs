@@ -1,49 +1,50 @@
-﻿namespace magazzinoApp.Models
+﻿using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+
+namespace magazzinoApp.Models
 {
     internal class Box
     {
-        public Box(
-            string Id,
-            string productCodes,
-            string colors,
-            string sizes,
-            string location)
+        public Box(string productCodes, string sizes, string location, string colors = "")
         {
-            this.Id = Id;
             this.productCodes = productCodes;
             this.colors = colors;
             this.sizes = sizes;
             this.location = location;
+            this.templateHTML = ReadTemplateFromFile();
         }
-        public string Id { get; }
 
         public string productCodes { get; }
         public string colors { get; }
         public string sizes { get; }
         public string location { get; }
 
+        private string templateHTML { get; set; }
 
         public string GenerateHTML()
         {
-            // read the template from the text file
-            // replace the placeholders with data
+            List<string> propertyNames = this.GetType().GetProperties().Select(x => x.Name).ToList();
 
-            return
-             "<div class=\"main-container\"" +
-             "   <div class=\"inner-container\" id=\"productCode\">" +
-            $"      {productCodes}" +
-             "   </div>                                        " +
-             "   <div class=\"inner-container\" id=\"colors\">     " +
-            $"       {colors}" +
-             "   </div>                                        " +
-             "   <div class=\"inner-container\" id=\"sizeNumbers\">" +
-            $"         {sizes}" +
-             "   </div>                                        " +
-             "   <div class=\"inner-container\" id=\"boxLocation\">" +
-            $"         {location}" +
-             "   </div>                                        " +
-             "</div>";
+            string template = templateHTML;
+            foreach (string propName in propertyNames)
+            {
+                template = template.Replace($"%{propName}%", (string)GetPropValue(this, propName));
+            }
 
+            return template;
+        }
+
+        public static object GetPropValue(object src, string propName)
+        {
+            return src.GetType().GetProperty(propName).GetValue(src, null);
+        }
+
+        private string ReadTemplateFromFile()
+        {
+            string currentDir = Directory.GetCurrentDirectory();
+            string text = File.ReadAllText($"{currentDir}\\htmlTemplate.txt");
+            return text;
         }
     }
 }
