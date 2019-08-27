@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace magazzinoApp.Models
+namespace maggazzinoAppDotNetFramework.Models
 {
     class MappingData
     {
@@ -16,13 +18,14 @@ namespace magazzinoApp.Models
             EndOfRangeBox = endOfRangeBox;
         }
 
-        public string SourceWorkSheet { get;  }
-        public string ShelfName { get;  }
-        public int RowBox { get;  }
-        public int ColBox { get;  }
-        public string StartOfRangeBox { get;  }
-        public string EndOfRangeBox { get;  }
+        public string SourceWorkSheet { get; }
+        public string ShelfName { get; }
+        public int RowBox { get; }
+        public int ColBox { get; }
+        public string StartOfRangeBox { get; }
+        public string EndOfRangeBox { get; }
 
-       
+
     }
 }
+

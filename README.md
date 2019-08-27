@@ -1,2 +1,0 @@
-# magazzinoApp
-Automatizazione Magazzino

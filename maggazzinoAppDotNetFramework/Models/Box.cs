@@ -1,8 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace magazzinoApp.Models
+namespace maggazzinoAppDotNetFramework.Models
 {
+   
     internal class Box
     {
         public Box(string productCodes, string sizes, string location, string templateHTML, string colors = "")
@@ -40,3 +44,4 @@ namespace magazzinoApp.Models
         }
     }
 }
+
