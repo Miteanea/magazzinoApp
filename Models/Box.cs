@@ -43,7 +43,7 @@ namespace magazzinoApp.Models
         private string ReadTemplateFromFile()
         {
             string currentDir = Directory.GetCurrentDirectory();
-            string text = File.ReadAllText($"{currentDir}\\htmlTemplate.txt");
+            string text = File.ReadAllText($"{currentDir}\\boxHtmlTemplate.txt");
             return text;
         }
     }
