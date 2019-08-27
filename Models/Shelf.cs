@@ -1,34 +1,45 @@
 ﻿using System.Collections.Generic;
+using System.Text;
 
 namespace magazzinoApp.Models
 {
     internal class Shelf
     {
-        public string Id { get; set; }
+        public Shelf(string shelfName)
+        {
+            Name = shelfName;
+            Boxes = new List<Box>();
+        }
+
+        public string Name { get; set; }
         public List<Box> Boxes { get; set; }
 
         public string GenerateHTML()
         {
-            var htmlString = "<page>";
+            StringBuilder htmlString = new StringBuilder();
+            string openTag = "\n<div class=\"page\">\n";
+            string closeTag = "\n</div>\n";
 
             for (int i = 1; i <= Boxes.Count; i++)
             {
-                if (i == 1)
+                if (i % 2 == 0)
                 {
-                    htmlString += Boxes[i];
+                    htmlString.Append('\n').Append(Boxes[i - 1].templateHTML).Append(closeTag);
                 }
-                if (i % 2 == 0 ||
-                    (i == Boxes.Count && Boxes.Count % 2 != 0))
+                if (
+                    (i == Boxes.Count && Boxes.Count % 2 != 0) &&
+                    (i % 2 != 0)
+                    )
                 {
-                    htmlString += Boxes[i] + "</page>";
+                    htmlString.Append(openTag).Append(Boxes[i - 1].templateHTML).Append(closeTag);
                 }
-                if (i % 2 != 0)
+                else if (i % 2 != 0 || i == 1)
                 {
-                    htmlString += Boxes[i];
+                    htmlString.Append(openTag).Append(Boxes[i - 1].templateHTML).Append("<br>");
                 }
             }
 
-            return htmlString;
+            return htmlString.ToString();
         }
     }
 }
