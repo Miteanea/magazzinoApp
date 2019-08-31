@@ -1,0 +1,10 @@
+C:\Users\dmitr\Desktop\magazzino\magazzinoApp\maggazzinoAppDotNetFramework\bin\Release\maggazzinoAppDotNetFramework.exe.config
+C:\Users\dmitr\Desktop\magazzino\magazzinoApp\maggazzinoAppDotNetFramework\bin\Release\maggazzinoAppDotNetFramework.exe
+C:\Users\dmitr\Desktop\magazzino\magazzinoApp\maggazzinoAppDotNetFramework\bin\Release\maggazzinoAppDotNetFramework.pdb
+C:\Users\dmitr\Desktop\magazzino\magazzinoApp\maggazzinoAppDotNetFramework\bin\Release\EPPlus.dll
+C:\Users\dmitr\Desktop\magazzino\magazzinoApp\maggazzinoAppDotNetFramework\bin\Release\EPPlus.xml
+C:\Users\dmitr\Desktop\magazzino\magazzinoApp\maggazzinoAppDotNetFramework\obj\Release\maggazzinoAppDotNetFramework.csprojAssemblyReference.cache
+C:\Users\dmitr\Desktop\magazzino\magazzinoApp\maggazzinoAppDotNetFramework\obj\Release\maggazzinoAppDotNetFramework.csproj.CoreCompileInputs.cache
+C:\Users\dmitr\Desktop\magazzino\magazzinoApp\maggazzinoAppDotNetFramework\obj\Release\maggazzinoAppDotNetFramework.csproj.CopyComplete
+C:\Users\dmitr\Desktop\magazzino\magazzinoApp\maggazzinoAppDotNetFramework\obj\Release\maggazzinoAppDotNetFramework.exe
+C:\Users\dmitr\Desktop\magazzino\magazzinoApp\maggazzinoAppDotNetFramework\obj\Release\maggazzinoAppDotNetFramework.pdb

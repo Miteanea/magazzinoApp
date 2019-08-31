@@ -13,7 +13,6 @@ namespace maggazzinoAppDotNetFramework
     {
         private static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
 
             // open excel
 
@@ -41,9 +40,9 @@ namespace maggazzinoAppDotNetFramework
             string finalDocument = mainTemplate.Replace("%dataPlaceholder%", htmlShelves);
 
             File.WriteAllText($"{Directory.GetCurrentDirectory()}\\final.html", finalDocument);
-            // read worksheets
 
-            // create boxes for every shelf
+            Console.WriteLine("Operation Complete!");
+            Console.ReadKey();
         }
 
         private static List<Shelf> CreateShelves(List<MappingData> creationMetadata, ExcelWorkbook wb)
