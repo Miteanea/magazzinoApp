@@ -8,3 +8,13 @@ C:\Users\caragheaur\Desktop\Learning Resources\maggazzinoAppDotNetFramework\magg
 C:\Users\caragheaur\Desktop\Learning Resources\maggazzinoAppDotNetFramework\maggazzinoAppDotNetFramework\obj\Debug\maggazzinoAppDotNetFramework.csproj.CopyComplete
 C:\Users\caragheaur\Desktop\Learning Resources\maggazzinoAppDotNetFramework\maggazzinoAppDotNetFramework\obj\Debug\maggazzinoAppDotNetFramework.exe
 C:\Users\caragheaur\Desktop\Learning Resources\maggazzinoAppDotNetFramework\maggazzinoAppDotNetFramework\obj\Debug\maggazzinoAppDotNetFramework.pdb
+C:\Users\dmitr\Desktop\magazzino\magazzinoApp\maggazzinoAppDotNetFramework\bin\Debug\maggazzinoAppDotNetFramework.exe.config
+C:\Users\dmitr\Desktop\magazzino\magazzinoApp\maggazzinoAppDotNetFramework\bin\Debug\maggazzinoAppDotNetFramework.exe
+C:\Users\dmitr\Desktop\magazzino\magazzinoApp\maggazzinoAppDotNetFramework\bin\Debug\maggazzinoAppDotNetFramework.pdb
+C:\Users\dmitr\Desktop\magazzino\magazzinoApp\maggazzinoAppDotNetFramework\bin\Debug\EPPlus.dll
+C:\Users\dmitr\Desktop\magazzino\magazzinoApp\maggazzinoAppDotNetFramework\bin\Debug\EPPlus.xml
+C:\Users\dmitr\Desktop\magazzino\magazzinoApp\maggazzinoAppDotNetFramework\obj\Debug\maggazzinoAppDotNetFramework.csprojAssemblyReference.cache
+C:\Users\dmitr\Desktop\magazzino\magazzinoApp\maggazzinoAppDotNetFramework\obj\Debug\maggazzinoAppDotNetFramework.csproj.CoreCompileInputs.cache
+C:\Users\dmitr\Desktop\magazzino\magazzinoApp\maggazzinoAppDotNetFramework\obj\Debug\maggazzinoAppDotNetFramework.csproj.CopyComplete
+C:\Users\dmitr\Desktop\magazzino\magazzinoApp\maggazzinoAppDotNetFramework\obj\Debug\maggazzinoAppDotNetFramework.exe
+C:\Users\dmitr\Desktop\magazzino\magazzinoApp\maggazzinoAppDotNetFramework\obj\Debug\maggazzinoAppDotNetFramework.pdb
