@@ -15,8 +15,9 @@ namespace maggazzinoAppDotNetFramework
         {
 
             // open excel
+            DirectoryInfo sourceDir = new DirectoryInfo(Directory.GetCurrentDirectory());
+            FileInfo sourceExcel = sourceDir.GetFiles("*.xlsx").FirstOrDefault();
 
-            FileInfo sourceExcel = new FileInfo($"{Directory.GetCurrentDirectory()}\\magazzino.xlsx");
             List<Shelf> shelves = new List<Shelf>();
 
             using (ExcelPackage package = new ExcelPackage(sourceExcel))
