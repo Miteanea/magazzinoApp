@@ -20,6 +20,8 @@ namespace maggazzinoAppDotNetFramework
 
             List<Shelf> shelves = new List<Shelf>();
 
+            // for each file in the source directory perform conversion and html creation
+
             using (ExcelPackage package = new ExcelPackage(sourceExcel))
             {
                 ExcelWorkbook wb = package.Workbook;
@@ -41,6 +43,8 @@ namespace maggazzinoAppDotNetFramework
             string finalDocument = mainTemplate.Replace("%dataPlaceholder%", htmlShelves);
 
             File.WriteAllText($"{Directory.GetCurrentDirectory()}\\final.html", finalDocument);
+
+            // send to e-mail
 
             Console.WriteLine("Operation Complete!");
             Console.ReadKey();
